@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Box, Heading, Stack, VStack, HStack, Button, Input,
+  Box, Heading, Stack, VStack, HStack, Button, Input, Text,
 } from '@chakra-ui/react';
 import { AiOutlineSend } from 'react-icons/ai';
 
@@ -14,11 +14,11 @@ function Footer() {
     >
       <Stack direction={['column', 'row']}>
         <VStack
-        alignItems={'stretch'}
-        w={'full'}
-        px={'4'}
+          alignItems="stretch"
+          w="full"
+          px="4"
         >
-          <Heading size="md" textTransform="uppercase" textAlign={["center", "left"]}>
+          <Heading size="md" textTransform="uppercase" textAlign={['center', 'left']}>
             Subscribe to get updates
           </Heading>
           <HStack
@@ -42,33 +42,33 @@ function Footer() {
             </Button>
           </HStack>
         </VStack>
-        <VStack 
-        w={'full'}
-        borderLeft={['none', '1px solid white']}
-        borderRight={['none', '1px solid white']}
-        > 
-            <Heading
-            textTransform={'uppercase'}
-            textAlign={'center'}
-            >
-                Video Hub
-            </Heading>
-            <Text>
-                All rights reserved
-            </Text>
+        <VStack
+          w="full"
+          borderLeft={['none', '1px solid white']}
+          borderRight={['none', '1px solid white']}
+        >
+          <Heading
+            textTransform="uppercase"
+            textAlign="center"
+          >
+            Video Hub
+          </Heading>
+          <Text>
+            All rights reserved
+          </Text>
         </VStack>
-        <VStack 
-        w={'full'}
-        > 
-            <Heading size={'md'} textTransform={'uppercase'}>
-                Social Media
-            </Heading>
-            <Button variant={'link'} colorScheme={'whiteAlpha'}>
-                <a targer="blank" href="https://github.com/NiharPhansalkar">GitHub</a>
-            </Button>
-            <Button variant={'link'} colorScheme={'whiteAlpha'}>
-                <a target="blank" href="https://www.linkedin.com/in/nihar-phansalkar-5a0a75220/">LinkedIn</a>
-            </Button>
+        <VStack
+          w="full"
+        >
+          <Heading size="md" textTransform="uppercase">
+            Social Media
+          </Heading>
+          <Button variant="link" colorScheme="whiteAlpha">
+            <a target="blank" href="https://github.com/NiharPhansalkar">GitHub</a>
+          </Button>
+          <Button variant="link" colorScheme="whiteAlpha">
+            <a target="blank" href="https://www.linkedin.com/in/nihar-phansalkar-5a0a75220/">LinkedIn</a>
+          </Button>
         </VStack>
       </Stack>
     </Box>
